@@ -1,0 +1,7 @@
+class Solution:
+    def repeatedNTimes(self, nums: List[int]) -> int:
+        t=list(set(nums))
+        for i in t:
+            if nums.count(i)>1:
+                return i
+                break
