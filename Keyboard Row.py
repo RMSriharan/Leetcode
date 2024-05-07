@@ -16,11 +16,8 @@ class Solution:
             for t in third_row:
                 if t in y:
                     count3+=1
-            if count1==len(y):
-                l.append(i)
-            if count2==len(y):
-                l.append(i)
-            if count3==len(y):
+            v=len(i)
+            if count1==v or count2==v or count3==v:
                 l.append(i)
         return l
 
