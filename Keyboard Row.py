@@ -16,7 +16,7 @@ class Solution:
             for t in third_row:
                 if t in y:
                     count3+=1
-            v=len(i)
+            v=len(y)
             if count1==v or count2==v or count3==v:
                 l.append(i)
         return l
