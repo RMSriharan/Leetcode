@@ -6,10 +6,7 @@ class Solution:
         rev=nums[::-1]
         for i in range(0,n):
             leftsum.append(sum(nums[0:i]))
-        for j in range(0,n):
-            rightsum.append(sum(rev[0:j]))
+            rightsum.append(sum(rev[0:i]))
         v=rightsum[::-1]
-        main_result=[]
-        for k in range(0,n):
-            main_result.append(abs(leftsum[k]-v[k]))
+        main_result=[abs(leftsum[k]-v[k]) for k in range(0,n)]
         return main_result
